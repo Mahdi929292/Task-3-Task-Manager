@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager</title>
+    <link id="theme-style" rel="stylesheet" href="style1.css">
+</head>
+<body>
+    <div class="container">
+        <div class="to-do-app">
+            <h2>Tasks List <img class="img" src="https://cdn.pixabay.com/photo/2016/03/31/19/50/checklist-1295319_640.png"></h2>
+            <div class="row">
+                <input type="text" id="input-box" placeholder="Write your task here">
+                <button onclick="addTask()">ADD</button>
+            </div>
+            <ul id="list-container"></ul>
+            <div class="color-picker">
+                <label for="color-theme">Choose a theme: </label>
+                <select id="color-theme" onchange="changeTheme()">
+                    <option value="style1.css">Teal & Purple</option>
+                    <option value="style2.css">Orange & Red</option>
+                    <option value="style3.css">Blue & Green</option>
+                </select>
+            </div>
+            
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

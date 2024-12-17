@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Sofadi+One&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Sofadi One", system-ui;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background: linear-gradient(90deg, rgb(255, 165, 0), rgb(255, 69, 0));
+    padding: 10px;
+}
+.img{
+    width: 30px;
+    margin-left: 10px;
+}
+.to-do-app{
+    width: 100%;
+    max-width: 540px;
+    background-color: #fff7e6;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.2);
+}
+.to-do-app h2{
+    color: #d35400;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    justify-content: center;
+}
+.row{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 215, 128, 0.5);
+    border-radius: 30px;
+    padding-left: 20px;
+    margin-bottom: 25px;
+    transition: 0.3s;
+}
+input{
+    flex: 1;
+    font-size: 20px;
+    border: 0;
+    outline: none;
+    background: transparent;
+    padding: 10px;
+    font-weight: 14px;
+    transition: 0.3s;
+}
+input::placeholder{
+    color: #d35400;
+}
+input:hover{
+    font-size: 22px;
+}
+button{
+    border: 0;
+    outline: none;
+    padding: 16px 50px;
+    background-color: #e74c3c;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 40px;
+    color: white;
+    transition: 0.4s;
+}
+button:hover{
+    background-color: #c0392b;
+}
+ul li{
+    list-style: none;
+    font-size: 19px;
+    padding: 12px 12px 12px 50px;
+    user-select: none;
+    cursor: pointer;
+    position: relative;
+    background-color: rgba(255, 228, 196, 0.5);
+    border-radius: 10px;
+}
+ul li::before{
+    content: '';
+    position: absolute;
+    height: 28px;
+    width: 28px;
+    border-radius: 50%;
+    background-image: url("https://static.thenounproject.com/png/60248-200.png");
+    background-size: cover;
+    background-position: center;
+    top: 10px;
+    left: 15px;
+}
+ul li.checked{
+    color: #555;
+    text-decoration: line-through;
+}
+ul li.checked::before{
+    background-image: url("https://media.istockphoto.com/id/643578030/vector/check-mark-icon.jpg?s=612x612&w=0&k=20&c=8SvCSN6Oit9dvbeXcJtGkI4sS0YYIRWEYnKtX6EqW1Y=");
+}
+ul li span{
+    position: absolute;
+    right: 0px;
+    top: 7px;
+    font-size: 22px;
+    width: 30px;
+    height: 30px;
+    border-radius: 10px;
+    text-align: center;
+    transition: 0.3s;
+}
+ul li span:hover{
+    background-color: #f5c6c6;
+    font-size: 26px;
+}
+
+.color-picker {
+    display: flex;
+    flex-direction: column; 
+    align-items: center;   
+    margin-top: 20px;     
+}
+
+label {
+    margin-bottom: 10px; 
+}
+
+.dragging {
+    opacity: 0.5;
+}
+
+
+#color-theme {
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 20px;
+    background-color: #e74c3c;
+    color: white;
+    outline: none;
+    cursor: pointer;
+    transition: 0.3s ease;
+    appearance: none; 
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='10' height='10' viewBox='0 0 10 6'%3E%3Cpath fill='white' d='M0 0l5 5 5-5z'/%3E%3C/svg%3E"); /* Custom arrow */
+    background-repeat: no-repeat;
+    background-position: right 10px center;
+}
+
+#color-theme:hover {
+    background-color:#c0392b;
+}
+
+#color-theme:focus {
+    outline: 2px solid #4834d4;
+}
